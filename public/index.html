@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Falcon Guard | Admin Panel</title>
+
+    <script defer src="/__/firebase/9.9.2/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"  />
+    
+  </head>
+  <body>
+
+    <div id="loadScreen">
+      <button id="loginBtn" onclick="login()"></button>
+    </div>
+    <div id="app">
+      <div id="navBar">
+        <div id="branding">
+          <span>Falcon Guard</span>
+        </div>
+        <button onclick="openModule(0)" class="module_btn"><i class="fa-solid fa-circle-info"></i>Society</button>
+        <button onclick="openModule(1)" class="module_btn"><i class="fa-solid fa-car"></i>Vehicles</button>
+        <button onclick="openModule(2)" class="module_btn"><i class="fa-solid fa-box-archive"></i>Archive</button>
+        <button id="logoutBtn"><i class="fa-solid fa-power-off"></i>Logout</button>
+      </div>
+      <div id="societies_module" class="module">
+        <h1 id="society_name">Shikhar Cooperative Housing Society</h1>
+        <h2>Gates: <span id="n_gates">3</span></h2>
+        <div id="gatesDiv">
+          <div class="gate">
+            <h3 class="gateName">Main Gate</h3>
+            <button><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash"></i></button>
+          </div>
+          <div class="gate">
+            <h3 class="gateName">Rear Gate</h3>
+            <button><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash"></i></button>
+          </div>
+          <div class="gate">
+            <h3 class="gateName">Gate 3</h3>
+            <button><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <button id="addGate"><i class="fa-solid fa-plus"></i>Add</button>
+                
+      </div>
+      <div id="vehicles_module" class="module">
+        <h1>Registered Member Vehicles</h1>
+        <button id="addVehicle"><i class="fa-solid fa-plus"></i>Add</button>
+        <table>
+          <tr>
+            <th>House</th>
+            <th>Vehicle Number</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>A-101</td>
+            <td>GJ6 AS 3856</td>
+            <td><button><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash"></i></button></td>
+          </tr>
+          <tr>
+            <td>A-101</td>
+            <td>GJ6 AS 3856</td>
+            <td><button><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash"></i></button></td>
+          </tr>
+          <tr>
+            <td>A-101</td>
+            <td>GJ6 AS 3856</td>
+            <td><button><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash"></i></button></td>
+          </tr>
+          <tr>
+            <td>A-101</td>
+            <td>GJ6 AS 3856</td>
+            <td><button><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash"></i></button></td>
+          </tr>
+          <tr>
+            <td>A-101</td>
+            <td>GJ6 AS 3856</td>
+            <td><button><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash"></i></button></td>
+          </tr>
+          <tr>
+            <td>A-101</td>
+            <td>GJ6 AS 3856</td>
+            <td><button><i class="fa-solid fa-pen"></i></button><button><i class="fa-solid fa-trash"></i></button></td>
+          </tr>
+        </table>
+      </div>
+      <div id="archive_module" class="module">
+          <h1>Archive</h1>
+      </div>
+    </div>
+    
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

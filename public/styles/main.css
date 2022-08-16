@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+#loadScreen {
+    display: block;
+}
+#app {
+    display: none;
+}
+#navBar {
+    float: left;;
+    width: 20vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+#branding {
+    padding-top: 5vh;
+    font-size: 5vh;
+    padding-bottom: 10vh;
+    padding-left: 2vw;
+}
+#navBar button {
+    display: block;
+    padding-left: 2vw;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    font-size: 5vh;
+    color: aliceblue;
+    margin-bottom: 4vh;
+    padding: 2vw;
+    border-top-right-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    cursor: pointer;
+}
+#navBar button:hover {
+    background-color: rgb(32, 31, 31);
+}
+#logoutBtn {
+    color: red !important;
+    font-size: 3vh !important;
+    margin-top: 10vh !important;
+}
+#navBar button i {
+    padding-right: 1vw;
+}
+.module {
+    width: 80vw;
+    height: 100vh;
+    text-align: center;
+    display: none;
+}
+.module > h1:nth-child(1) {  
+    margin-top: 0;
+    padding-top: 5vh;
+}
+.focussed_module_btn {
+    background-color: rgb(47, 47, 47) !important;
+}
+#vehicles_module table {
+    margin: 5vh auto;
+    font-family: arial, sans-serif;
+    width: 90%;
+    text-align: left;
+    border-collapse: collapse;
+}
+#vehicles_module table th, #vehicles_module table td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+}
+#vehicles_module table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+#gatesDiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vh auto;
+    background-color: rgb(241, 252, 230);
+    width: 90%;
+    height: 60%;
+    border-radius: 20px;
+    overflow: auto;
+}
+.gate {
+    background-color: rgb(89, 203, 203);
+    width: 20%;
+    height: 25%;
+    margin: 3vh auto;
+    overflow: auto;
+    padding: 8px;
+    border-radius: 20px;
+}
